@@ -90,7 +90,7 @@ img.badge1 {
     z-index: 99999;
     text-align: center;
     justify-content: center;
-    display: flex;
+    display: none;
 }
 
 .overlay1_center_card {
@@ -306,7 +306,7 @@ button.overlay1_center_btn img {
     border-top: 0.9em solid #FBE6D6;
     border-right: 0.9em solid #FBE6D6;
     border-bottom: 0.9em solid #FBE6D6;
-    border-left: 0.9em solid #ff7904;
+    border-left: 0.9em solid #61D6F9;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
@@ -367,7 +367,7 @@ span.important {
     display: none;
     width: calc(100% - 300px);
     margin: auto;
-    padding-top: 100px;
+    padding-top: 130px;
     overflow: scroll;
     scroll-behavior: smooth;
     max-width: 800px;
@@ -375,12 +375,18 @@ span.important {
     overflow-x: hidden;
 }
 
+.chat_area .badge img {
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+
 .chat_area::-webkit-scrollbar {
     display: none;
 }
 
 .chat_section {
-    width: 85%;
+    width: 150%;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -399,16 +405,15 @@ span.important {
 
 img.user_icon_pic {
     width: 100%;
-    border-radius: 50%;
-    border: solid 2px #ec7f00;
-    max-width: 73px;
+    max-width: 93px;
     background: #FFF;
+    border-radius: 50%;
 }
 
 .chat_body_area {
     display: block;
     width: 81%;
-    margin-left: 4%;
+    margin-left: 0%;
 }
 
 .balloon2-left {
@@ -416,11 +421,11 @@ img.user_icon_pic {
     display: inline-block;
     padding: 18px 21px;
     min-width: 120px;
-    color: #555;
+    color: #00C1FB;
     font-size: 16px;
     background: #FFF;
     box-sizing: border-box;
-    border: solid 2px #ec7f00;
+    border: solid 2px #00C1FB;
     border-radius: 12px;
     max-width: 74%;
 }
@@ -443,24 +448,25 @@ img.user_icon_pic {
     left: -26px;
     margin-top: -14px;
     border: 14px solid transparent;
-    border-right: 14px solid #ec7f00;
+    border-right: 14px solid #00C1FB;
     z-index: -2;
 }
 
 .balloon2-left div {
     margin: 0;
     padding: 0;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
-    color: #000;
+    color: #00C1FB;
 }
 
 .chat_body_user_name {
-    font-size: 13px;
-    font-weight: 800;
-    color: #582e0e;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 500;
+    color: #00C1FB;
     margin-bottom: 5px;
-    text-shadow: 0.6px 0.6px 0 #FFF, -0.6px -0.6px 0 #FFF, -0.6px 0.6px 0 #FFF, 0.6px -0.6px 0 #FFF, 0px 0.6px 0 #FFF, 0-0.6px 0 #FFF, -0.6px 0 0 #FFF, 0.6px 0 0 #FFF;
+    /* text-shadow: 0.6px 0.6px 0 #FFF, -0.6px -0.6px 0 #FFF, -0.6px 0.6px 0 #FFF, 0.6px -0.6px 0 #FFF, 0px 0.6px 0 #FFF, 0-0.6px 0 #FFF, -0.6px 0 0 #FFF, 0.6px 0 0 #FFF; */
 }
 
 .me_chat_section {
@@ -495,7 +501,7 @@ span.my_answer_span {
     max-width: 100%;
     color: #fff;
     font-size: 16px;
-    background: #f58803;
+    background: #61D6F9;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -507,7 +513,7 @@ span.my_answer_span {
     right: -24px;
     margin-top: -12px;
     border: 12px solid transparent;
-    border-left: 12px solid #f58803;
+    border-left: 12px solid #61D6F9;
     z-index: 2;
 }
 
@@ -521,7 +527,7 @@ span.my_answer_span {
 }
 
 .user_guide_message {
-    display: none;
+    display: none!important;
     position: fixed;
     bottom: 62px;
     right: 20px;
@@ -581,10 +587,10 @@ span.my_answer_span {
 
 .user_guide_message_img1 {
     position: absolute;
-    width: 120px;
-    right: -2%;
+    width: 100px;
+    right: 2%;
     filter: drop-shadow(3px 3px 16px #999);
-    bottom: 25%;
+    bottom: 0%;
     animation: fuwafuwa 1.1s infinite ease-in-out .8s alternate;
 }
 
@@ -1185,7 +1191,7 @@ button.question_overlay1_close_btn2 i {
 
 .developer_panel {
     position: fixed;
-    display: none;
+    display: none!important;
     width: 10%;
     max-width: 200px;
     left: 2%;
@@ -1469,9 +1475,9 @@ span.select_text_ring2 {
     vertical-align: bottom;
     margin: 1.5em 9px 0px 0;
     font-size: 12px;
-    color: #864b04d1;
-    font-weight: 700;
-    text-shadow: 0.6px 0.6px 0 #FFF, -0.6px -0.6px 0 #FFF, -0.6px 0.6px 0 #FFF, 0.6px -0.6px 0 #FFF, 0px 0.6px 0 #FFF, 0-0.6px 0 #FFF, -0.6px 0 0 #FFF, 0.6px 0 0 #FFF;
+    color: #61D6F9;
+    font-weight: 500;
+    /* text-shadow: 0.6px 0.6px 0 #FFF, -0.6px -0.6px 0 #FFF, -0.6px 0.6px 0 #FFF, 0.6px -0.6px 0 #FFF, 0px 0.6px 0 #FFF, 0-0.6px 0 #FFF, -0.6px 0 0 #FFF, 0.6px 0 0 #FFF; */
 }
 
 span.hensuu {
@@ -1994,7 +2000,7 @@ img.select_text_ring_img {
 }
 
 .test_panel {
-    display: none;
+    display: none!important;
     top: 10%;
     max-width: 80%;
     position: fixed;
@@ -2073,7 +2079,7 @@ label.stop_overlay1_label {
 
 .fix_btn {
     display: inline-block;
-    color: #f58803eb;
+    color: #61D6F9;
     font-size: 15px;
     cursor: pointer;
     border: none;
@@ -2114,7 +2120,7 @@ label.stop_overlay1_label {
 button.settings_btn1 {
     font-size: 23px;
     font-weight: 600;
-    background: #f58803eb;
+    background: #61D6F9;
     border: none;
     color: #FFF;
     border-radius: 10px;
@@ -2125,11 +2131,11 @@ button.settings_btn1 {
 }
 
 button.settings_btn1:hover {
-    background: #d07505eb;
+    background: #00C1FB;
 }
 
 button.settings_btn1:hover {
-    background: #a65e04eb;
+    background: #00C1FB;
 }
 
 button.settings_btn1 i {
@@ -2254,7 +2260,7 @@ div.banner_body {
 }
 
 span.message_score {
-    color: #f58704;
+    color: #61D6F9;
     padding-left: 6px;
     animation: flash 1s linear infinite;
     display: none;
