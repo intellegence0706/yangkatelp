@@ -1,0 +1,53 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+iframe {
+	border:1px solid #666;
+}
+
+body #japan-map-container {
+	over-flow:hidden;
+	position:relative;
+	display:fixed;
+	z-index:100;
+}
+
+body #japan-map-container > canvas {
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index: 101;
+}
+
+body #japan-map-back-btn {
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index:100000;
+	display: none;
+}
+input#japan-map-back-btn {
+	background: #f48e24;
+	border: none;
+	color: #FFF;
+	font-size: 21px;
+	padding: 6px 16px;
+	border-radius: 16px;
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+	border-bottom: 3px #6a6a6a38 solid;
+	font-weight: 600;
+  }
+
+  input#japan-map-back-btn:hover {
+	background: #dc7d18;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+	border-bottom: 3px #6a6a6a38 solid;
+  }
+
+  input#japan-map-back-btn:active {
+	background: #b6640d;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	border-bottom: 0.2px #6a6a6a38 solid;
+  }

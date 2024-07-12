@@ -1,0 +1,156 @@
+Uri: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+File Name: C:\Downloaded Web Sites\doors-my.com\ajax\libs\jquery\3.6.0\jquery.min-1.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-3.2.1.min.js
+File Name: C:\Downloaded Web Sites\doors-my.com\jquery-3.2.1.min-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/answer.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\answer-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/answer_unit.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\answer_unit-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/chat.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\chat-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/img/advisor_icon.webp
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\advisor_icon-1.webp
+Content Type: image/webp
+
+Uri: https://doors-my.com/chat_lp/img/favicon.ico
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\favicon-1.ico
+Content Type: image/x-icon
+
+Uri: https://doors-my.com/chat_lp/img/gaiheki_top_banner.webp
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\gaiheki_top_banner-1.webp
+Content Type: image/webp
+
+Uri: https://doors-my.com/chat_lp/img/gesture01.webp
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\gesture01-1.webp
+Content Type: image/webp
+
+Uri: https://doors-my.com/chat_lp/img/sp_banner.webp
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\sp_banner-1.webp
+Content Type: image/webp
+
+Uri: https://doors-my.com/chat_lp/img/stop_banner1.webp
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\img\stop_banner1-1.webp
+Content Type: image/webp
+
+Uri: https://doors-my.com/chat_lp/lp/1/
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\lp\1\index-1.htm
+Content Type: text/html
+
+Uri: https://doors-my.com/chat_lp/main.css?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\main-1.css
+Content Type: text/css
+
+Uri: https://doors-my.com/chat_lp/main.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\main-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/modal.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\modal-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/other/answer_change.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\other\answer_change.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/other/developer.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\other\developer.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/other/library.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\other\library.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/other/menu.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\other\menu.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/pattern.css?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\pattern-1.css
+Content Type: text/css
+
+Uri: https://doors-my.com/chat_lp/question_add.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\question_add-1.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/thanks/cv.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\thanks\cv.js
+Content Type: application/javascript
+
+Uri: https://doors-my.com/chat_lp/thanks/thanks.js?2023050935
+File Name: C:\Downloaded Web Sites\doors-my.com\chat_lp\thanks\thanks.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap
+File Name: C:\Downloaded Web Sites\doors-my.com\css2-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Reggae+One&display=swap
+File Name: C:\Downloaded Web Sites\doors-my.com\css2-3
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: C:\Downloaded Web Sites\doors-my.com\icon-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined
+File Name: C:\Downloaded Web Sites\doors-my.com\icon-3
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\materialicons\v142\flUhRq6tzZclQEJ-Vdg-IuiaDsNZ-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialiconsoutlined/v109/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd.otf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\materialiconsoutlined\v109\gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcd-1.otf
+Content Type: font/otf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFE8j75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFE8j75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFJEk75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFJEk75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFLgk75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFLgk75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFM8k75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFM8k75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFPYk75s.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\notosansjp\v52\-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFPYk75s-1.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/reggaeone/v16/7r3DqX5msMIkeuwJwOJt_a4.ttf
+File Name: C:\Downloaded Web Sites\doors-my.com\s\reggaeone\v16\7r3DqX5msMIkeuwJwOJt_a4-1.ttf
+Content Type: font/ttf
+
+Uri: https://iseki.app/doors/content/uploads/2020/01/fabikon.png
+File Name: C:\Downloaded Web Sites\doors-my.com\doors\content\uploads\2020\01\fabikon-1.png
+Content Type: image/png
+
+Uri: https://map.japanpost.jp/smt/search/company/search/img/webclip.png
+File Name: C:\Downloaded Web Sites\doors-my.com\smt\search\company\search\img\webclip-1.png
+Content Type: image/png
+

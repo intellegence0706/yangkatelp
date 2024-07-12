@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>2段階選択式の日本地図</title>
+    <script src="../jquery-3.2.1.min-2.js"></script>
+
+</head>
+
+<body>
+    <style>
+        /* 日本地図DOM */
+        body {
+            font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+        }
+
+        .japan_map {
+            position: relative;
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: table;
+        }
+
+        /* 日本地図画像（スマホ対応用） */
+        .japan_map img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+            -webkit-backface-visibility: hidden;
+        }
+
+        /* 日本地図ボタン */
+        .japan_map .area_btn {
+            position: absolute;
+            z-index: 1;
+            box-sizing: border-box;
+            cursor: pointer;
+            border: 3px solid #333333;
+            border-radius: 5px;
+            background-color: #FFF;
+            padding: 0.2em auto;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* ボタン配置（使用する日本地図画像により微調整） */
+        .japan_map .area_btn.area1 {
+            top: 30%;
+            right: 0;
+            width: 39%;
+            padding: 7px 0px;
+        }
+
+        .japan_map .area_btn.area2 {
+            top: 65%;
+            right: 7%;
+            width: 18%;
+            padding: 7px 0px;
+        }
+
+        .japan_map .area_btn.area3 {
+            top: 52%;
+            right: 23.5%;
+            width: 19%;
+            padding: 7px 0px;
+        }
+
+        .japan_map .area_btn.area4 {
+            top: 70%;
+            right: 39%;
+            width: 19%;
+            padding: 7px 0px;
+        }
+
+        .japan_map .area_btn.area5 {
+            top: 64%;
+            left: 23%;
+            width: 17%;
+            white-space: unset !important;
+            text-align: left;
+            padding: 0px 7px;
+        }
+
+        .japan_map .area_btn.area6 {
+            top: 52%;
+            left: 0;
+            width: 22%;
+            white-space: unset !important;
+            text-align: left;
+            padding: 0px 7px;
+        }
+
+        /* オーバーレイ */
+        .japan_map .area_overlay {
+            display: none;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        /* 選択前は表示を隠す */
+        .japan_map .pref_area {
+            display: none;
+        }
+
+        /* 地域毎の都道府県リスト */
+        .japan_map .pref_list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            z-index: 3;
+            box-sizing: border-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 90%;
+            background-color: #FFF;
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+            border-radius: 12px;
+        }
+
+        .japan_map .pref_list>div {
+            box-sizing: border-box;
+            width: 50%;
+            border: 1px solid #CCC;
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5em;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            /* スマホユーザー向けにボタン文字サイズを調整 */
+            .japan_map .area_btn {
+                font-size: 5vw;
+            }
+        }
+    </style>
+    <div class="japan_map">
+        <img src="img/2fb0260f7a6523c60b142721e8191baf.png" alt="日本地図">
+        <span class="area_btn area1" data-area="1">北海道・東北</span>
+        <span class="area_btn area2" data-area="2">関東</span>
+        <span class="area_btn area3" data-area="3">中部</span>
+        <span class="area_btn area4" data-area="4">近畿</span>
+        <span class="area_btn area5" data-area="5">中国四国</span>
+        <span class="area_btn area6" data-area="6">九州・沖縄</span>
+
+        <div class="area_overlay"></div>
+        <div class="pref_area">
+            <div class="pref_list" data-list="1">
+                <div data-id="1">北海道</div>
+                <div data-id="2">青森県</div>
+                <div data-id="3">岩手県</div>
+                <div data-id="4">宮城県</div>
+                <div data-id="5">秋田県</div>
+                <div data-id="6">山形県</div>
+                <div data-id="7">福島県</div>
+                <div></div>
+            </div>
+
+            <div class="pref_list" data-list="2">
+                <div data-id="8">茨城県</div>
+                <div data-id="9">栃木県</div>
+                <div data-id="10">群馬県</div>
+                <div data-id="11">埼玉県</div>
+                <div data-id="12">千葉県</div>
+                <div data-id="13">東京都</div>
+                <div data-id="14">神奈川県</div>
+                <div></div>
+            </div>
+
+            <div class="pref_list" data-list="3">
+                <div data-id="15">新潟県</div>
+                <div data-id="16">富山県</div>
+                <div data-id="17">石川県</div>
+                <div data-id="18">福井県</div>
+                <div data-id="19">山梨県</div>
+                <div data-id="20">長野県</div>
+                <div data-id="21">岐阜県</div>
+                <div data-id="22">静岡県</div>
+                <div data-id="23">愛知県</div>
+                <div></div>
+            </div>
+
+            <div class="pref_list" data-list="4">
+                <div data-id="24">三重県</div>
+                <div data-id="25">滋賀県</div>
+                <div data-id="26">京都府</div>
+                <div data-id="27">大阪府</div>
+                <div data-id="28">兵庫県</div>
+                <div data-id="29">奈良県</div>
+                <div data-id="30">和歌山県</div>
+                <div></div>
+            </div>
+
+            <div class="pref_list" data-list="5">
+                <div data-id="31">鳥取県</div>
+                <div data-id="32">島根県</div>
+                <div data-id="33">岡山県</div>
+                <div data-id="34">広島県</div>
+                <div data-id="35">山口県</div>
+                <div data-id="36">徳島県</div>
+                <div data-id="37">香川県</div>
+                <div data-id="38">愛媛県</div>
+                <div data-id="39">高知県</div>
+                <div></div>
+            </div>
+
+            <div class="pref_list" data-list="6">
+                <div data-id="40">福岡県</div>
+                <div data-id="41">佐賀県</div>
+                <div data-id="42">長崎県</div>
+                <div data-id="43">熊本県</div>
+                <div data-id="44">大分県</div>
+                <div data-id="45">宮崎県</div>
+                <div data-id="46">鹿児島県</div>
+                <div data-id="47">沖縄県</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            //地域を選択
+            $('.area_btn').click(function () {
+                $('.area_overlay').show();
+                $('.pref_area').show();
+                var area = $(this).data('area');
+                $('[data-list]').hide();
+                $('[data-list="' + area + '"]').show();
+            });
+
+            //レイヤーをタップ
+            $('.area_overlay').click(function () {
+                prefReset();
+            });
+
+            //都道府県をクリック
+            $('.pref_list [data-id]').click(function () {
+                if ($(this).data('id')) {
+                    var id = $(this).data('id');
+
+                    var pref_ary = ['', '北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県']
+                    var pref_name = pref_ary[id];
+
+
+
+                    //このidを使用して行いたい操作をしてください
+                    //都道府県IDに応じて別ページに飛ばしたい場合はこんな風に書く↓
+                    //window.location.href = 'https://kinocolog.com/pref/' + id;
+                    window.parent.add_answer('question_3', pref_name);
+
+
+                    prefReset();
+                }
+            });
+
+
+
+            
+            //表示リセット
+            function prefReset() {
+                $('[data-list]').hide();
+                $('.pref_area').hide();
+                $('.area_overlay').hide();
+            }
+        });
+    </script>
+</body>
+
+</html>

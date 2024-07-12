@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Reggae One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/reggaeone/v16/7r3DqX5msMIkeuwJwOJt_a4-1.ttf) format('truetype');
+}
