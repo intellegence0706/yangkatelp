@@ -272,7 +272,6 @@ function get_lp_list2(json_ary) {
             var css_class = lp_meta_data[4].split('＋');
             document.getElementById("backgrand_pic_img").display = 'none';
             document.getElementById("backgrand_pic").classList.add(css_class[1])
-
             document.getElementById("backgrand_pic").style.backgroundColor = css_class[2];
             document.getElementById("backgrand_pic").style.color = css_class[3];
 
@@ -281,7 +280,6 @@ function get_lp_list2(json_ary) {
             document.getElementById("backgrand_pic_img").src = lp_meta_data[4];
             document.getElementById("backgrand_pic_img").style.opacity = '1';
             document.getElementById("backgrand_pic_img").style.transform = 'scale(1)';
-
             document.getElementById("loading_overlay1").style.background = 'url(' + lp_meta_data[4] + ')';
             document.getElementById("loading_overlay1").style.backgroundSize = '100%';
         }

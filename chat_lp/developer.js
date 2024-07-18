@@ -63,10 +63,10 @@ function close_developer_overlay1() {
 
 
 function view_developer_question() {
-    var count = document.getElementById("list1").childElementCount;
+    var count = document.getElementById("list9").childElementCount;
     var html = '';
     for (var c = 0; c < count; c++) {
-        var meta_data = document.getElementById("list1").children[c].textContent;
+        var meta_data = document.getElementById("list9").children[c].textContent;
         var meta_list = meta_data.split('＆＄');
         var q_id = meta_list[0]
         var q_title = meta_list[5]

@@ -4,20 +4,20 @@
 function fix_answer(id) {
 
     var wait_mode = document.getElementById("wait_mode").value;
-    if(wait_mode != 'true'){
-        setTimeout('fix_answer(' + "'" + id + "'" + ')',1000);
+    if (wait_mode != 'true') {
+        setTimeout('fix_answer(' + "'" + id + "'" + ')', 1000);
         document.getElementById("main_load_overlay1").style.display = 'flex';
-        document.getElementById("main_load_overlay1_message_area").innerHTML = ''
-            + 'しばらく'
-            + '<span class="important">お待ちください</span>..';
+        document.getElementById("main_load_overlay1_message_area").innerHTML = '' +
+            'しばらく' +
+            '<span class="important">お待ちください</span>..';
         return;
     }
 
     document.getElementById("main_load_overlay1").style.display = 'none';
 
 
-    if(id == 'question_1'){
-     //   return;
+    if (id == 'question_1') {
+        //   return;
     }
 
     var find_id = id + '_u';
@@ -30,9 +30,9 @@ function fix_answer(id) {
         try {
             var meta_id = document.getElementById("chat_area").children[search_row].id;
             if (find_id == meta_id) {
-                var delete_flag = 'delete';//指定のID以降のメッセージは削除する
+                var delete_flag = 'delete'; //指定のID以降のメッセージは削除する
             }
-        } catch (e) { }
+        } catch (e) {}
         if (delete_flag == 'delete') {
             document.getElementById("chat_area").children[row].remove();
             row -= 1;
@@ -57,17 +57,17 @@ function fix_answer(id) {
     var now_chat_num = document.getElementById("now_question_number").value;
     var now_chat_num = Number(now_chat_num);
 
-    var count = document.getElementById("list1").childElementCount;
+    var count = document.getElementById("list9").childElementCount;
     for (var c = 0; c < count; c++) {
-        var meta_data = document.getElementById("list1").children[c].textContent;
+        var meta_data = document.getElementById("list9").children[c].textContent;
         var meta_list = meta_data.split('＆＄');
 
-        var message_id = meta_list[0];//メッセージID
-        if(id == message_id){
+        var message_id = meta_list[0]; //メッセージID
+        if (id == message_id) {
             var now_chat_num = c;
             break;
         }
-    }//for
+    } //for
     document.getElementById("now_question_number").value = now_chat_num;
     next_chat_go();
 

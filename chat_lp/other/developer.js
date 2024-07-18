@@ -3,20 +3,20 @@ function view_developer_panel() {
 
     document.getElementById("developer_panel").style.display = 'block';
 
-    var html = ''
-        + '<img class="panel_logo" src="https://iseki.app/images/iseki_logo3.webp" >'
-        + '<h1 class="panel_h1" >開発パネル</h1>'
-        + '<a class="panel_btn1" href="https://the.gaihekitosou-support.jp/ab/gaiheki-sb-genpon?type=LP56" target="blank" >AdOps比較</a>'
-        + '<button class="panel_btn2" onclick="next_chat_go()" ><i class="material-icons">skip_next</i></button>'
-        + '<button class="panel_btn2" onclick="save_answer_reset()" ><i class="material-icons">restart_alt</i></button>'
+    var html = '' +
+        '<img class="panel_logo" src="https://iseki.app/images/iseki_logo3.webp" >' +
+        '<h1 class="panel_h1" >開発パネル</h1>' +
+        '<a class="panel_btn1" href="https://the.gaihekitosou-support.jp/ab/gaiheki-sb-genpon?type=LP56" target="blank" >AdOps比較</a>' +
+        '<button class="panel_btn2" onclick="next_chat_go()" ><i class="material-icons">skip_next</i></button>' +
+        '<button class="panel_btn2" onclick="save_answer_reset()" ><i class="material-icons">restart_alt</i></button>'
 
-        + '<a class="panel_btn1" onclick="view_developer_answer()" >回答を表示</a>'
-        + '<a class="panel_btn1" onclick="view_developer_question()" >質問一覧</a>'
-        + '<a class="panel_btn1" onclick="view_developer_output_answer()" >回答を出力</a>'
-        + '<a class="panel_btn1" id="skip_mode_btn" onclick="skip_mode_on()" >skip_mode</a>'
-        + '<a class="panel_btn1" onclick="save_answer_local()" >保存する</a>'
-        + '<a class="panel_btn1" onclick="save_answer_reset()" >リセット</a>'
-        + '<a class="panel_btn1" onclick="clear_lp_save()" >LPリセマラ</a>'
+    +'<a class="panel_btn1" onclick="view_developer_answer()" >回答を表示</a>' +
+    '<a class="panel_btn1" onclick="view_developer_question()" >質問一覧</a>' +
+    '<a class="panel_btn1" onclick="view_developer_output_answer()" >回答を出力</a>' +
+    '<a class="panel_btn1" id="skip_mode_btn" onclick="skip_mode_on()" >skip_mode</a>' +
+    '<a class="panel_btn1" onclick="save_answer_local()" >保存する</a>' +
+    '<a class="panel_btn1" onclick="save_answer_reset()" >リセット</a>' +
+    '<a class="panel_btn1" onclick="clear_lp_save()" >LPリセマラ</a>'
 
     document.getElementById("developer_panel").innerHTML = html
 
@@ -25,7 +25,7 @@ function view_developer_panel() {
 }
 
 
-function clear_lp_save(){
+function clear_lp_save() {
     localStorage.removeItem('chat_lp_lp_id');
     location.reload();
 }
@@ -43,14 +43,15 @@ function view_developer_answer() {
 
 
     document.getElementById("developer_overlay1").style.display = 'flex';
-    document.getElementById("developer_overlay1_card").innerHTML = ''
-        + '<div class="developer_card">'
-        + '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>'
-        + '<div class="developer_card_answer_list">'
-        + html
-        + '</div>'
-        + '</div>'
+    document.getElementById("developer_overlay1_card").innerHTML = '' +
+        '<div class="developer_card">' +
+        '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>' +
+        '<div class="developer_card_answer_list">' +
+        html +
+        '</div>' +
+        '</div>'
 }
+
 function close_developer_overlay1() {
     document.getElementById("developer_overlay1").style.display = 'none';
 }
@@ -62,30 +63,30 @@ function close_developer_overlay1() {
 
 
 function view_developer_question() {
-    var count = document.getElementById("list1").childElementCount;
+    var count = document.getElementById("list9").childElementCount;
     var html = '';
     for (var c = 0; c < count; c++) {
-        var meta_data = document.getElementById("list1").children[c].textContent;
+        var meta_data = document.getElementById("list9").children[c].textContent;
         var meta_list = meta_data.split('＆＄');
         var q_id = meta_list[0]
         var q_title = meta_list[5]
-        html += ''
-            + '<div class="developer_card_answer_list_div">'
-            + '<span class="q_id" >' + q_id + '</span>'
-            + '<p class="q_title" >' + q_title + '</p>'
-            + '</div>'
+        html += '' +
+            '<div class="developer_card_answer_list_div">' +
+            '<span class="q_id" >' + q_id + '</span>' +
+            '<p class="q_title" >' + q_title + '</p>' +
+            '</div>'
     }
 
 
 
     document.getElementById("developer_overlay1").style.display = 'flex';
-    document.getElementById("developer_overlay1_card").innerHTML = ''
-        + '<div class="developer_card">'
-        + '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>'
-        + '<div class="developer_card_answer_list">'
-        + html
-        + '</div>'
-        + '</div>'
+    document.getElementById("developer_overlay1_card").innerHTML = '' +
+        '<div class="developer_card">' +
+        '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>' +
+        '<div class="developer_card_answer_list">' +
+        html +
+        '</div>' +
+        '</div>'
 }
 
 
@@ -103,16 +104,17 @@ function view_developer_output_answer() {
 
 
     document.getElementById("developer_overlay1").style.display = 'flex';
-    document.getElementById("developer_overlay1_card").innerHTML = ''
-        + '<div class="developer_card">'
-        + '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>'
-        + '<textarea class="developer_textarea" id="answer_meta_data_text" >' + answer_data + '</textarea>'
-        + '<button class="developer_btn1" onclick="close_developer_overlay1()" >コピー</button>'
-        + '<button class="developer_btn1" onclick="view_developer_output_answer_import()" >インポート</button>'
-        + '<button class="developer_btn1" onclick="close_developer_overlay1()" >ローカルストレージに保存</button>'
-        + '<button class="developer_btn1" onclick="close_developer_overlay1()" >ローカルストレージから復元</button>'
+    document.getElementById("developer_overlay1_card").innerHTML = '' +
+        '<div class="developer_card">' +
+        '<button class="question_overlay1_close_btn" onclick="close_developer_overlay1()" ><i class="material-icons">close</i></button>' +
+        '<textarea class="developer_textarea" id="answer_meta_data_text" >' + answer_data + '</textarea>' +
+        '<button class="developer_btn1" onclick="close_developer_overlay1()" >コピー</button>' +
+        '<button class="developer_btn1" onclick="view_developer_output_answer_import()" >インポート</button>' +
+        '<button class="developer_btn1" onclick="close_developer_overlay1()" >ローカルストレージに保存</button>' +
+        '<button class="developer_btn1" onclick="close_developer_overlay1()" >ローカルストレージから復元</button>'
 
-        + '</div>'
+    +
+    '</div>'
 }
 
 
@@ -147,12 +149,12 @@ function skip_mode_on() {
         document.getElementById('skip_mode').value = 'true';
         try {
             document.getElementById('skip_mode_btn').classList.add('skip_mode_on')
-        } catch (e) { }
+        } catch (e) {}
     } else {
         document.getElementById('skip_mode').value = '';
         try {
             document.getElementById('skip_mode_btn').classList.remove('skip_mode_on')
-        } catch (e) { }
+        } catch (e) {}
     }
 
 }

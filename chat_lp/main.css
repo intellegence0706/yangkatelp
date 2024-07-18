@@ -427,7 +427,7 @@ img.user_icon_pic {
     box-sizing: border-box;
     border: solid 2px #00C1FB;
     border-radius: 12px;
-    max-width: 74%;
+    max-width: 50%;
 }
 
 .balloon2-left:before {
@@ -587,8 +587,8 @@ span.my_answer_span {
 
 .user_guide_message_img1 {
     position: absolute;
-    width: 100px;
-    right: 2%;
+    width: 75px;
+    right: 5%;
     filter: drop-shadow(3px 3px 16px #999);
     bottom: 0%;
     animation: fuwafuwa 1.1s infinite ease-in-out .8s alternate;
